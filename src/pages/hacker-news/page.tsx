@@ -1,3 +1,4 @@
+import { Rodape } from "@/entities/rodape";
 import { ListaNoticias } from "@/widgets/lista-noticias/ui";
 import { TopArea } from "@/widgets/top-area/ui";
 
@@ -7,7 +8,9 @@ export function HackerNewsPage() {
       <TopArea />
       <div className="flex flex-row mt-10">
         <ListaNoticias />
+        
       </div>
+      <Rodape />
     </div>
   );
 }
