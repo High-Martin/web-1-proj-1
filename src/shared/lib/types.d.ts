@@ -13,3 +13,5 @@ export type Noticia = {
 
 export type NoticiaPreview = Pick<Noticia, 
     'slug' | 'urlCapa' | 'titulo' | 'dataPublicacao' | 'tags' | 'resumo'>;
+
+export type NoticiaTrending = Pick<Noticia, 'slug' | 'urlCapa' | 'titulo'>;

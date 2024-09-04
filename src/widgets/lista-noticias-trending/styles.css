@@ -1,0 +1,8 @@
+.trendingTitle::before{
+    display: inline-block;
+    width: 20px;
+    height: 7px;
+    content: '';
+    border-top: 3px solid #2B384E;
+    margin: 0 8px;
+}

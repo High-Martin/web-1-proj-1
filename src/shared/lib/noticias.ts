@@ -1,4 +1,4 @@
-import { Noticia, NoticiaPreview } from "./types";
+import { Noticia, NoticiaPreview, NoticiaTrending } from "./types";
 
 const noticias: Noticia[] = [
   {
@@ -62,4 +62,11 @@ export function getNoticiasPreview(): NoticiaPreview[] {
     resumo: noticia.resumo,
   }));
 }
-  
+
+export function getNoticiasTrending(): NoticiaTrending[] {
+  return noticias.map((noticia) => ({
+    slug: noticia.slug,
+    urlCapa: noticia.urlCapa,
+    titulo: noticia.titulo,
+  }));
+}

@@ -7,15 +7,15 @@ import { date2String } from "../lib/utils";
 
 export function NoticiaCard({ noticia }: { noticia: NoticiaPreview }) {
   return (
-    <Link to={`/noticia/${noticia.slug}`}>
-      <Card className="mb-[20px] border-none shadow-none">
-        <CardContent className="flex gap-4">
-          <div className="w-2/5 rounded-[10px] overflow-hidden hover:rounded-none transition-all duration-300 shrink-0">
+    <Link to={`/noticia/${noticia.slug}`} className="mb-[20px]">
+      <Card className="border-none shadow-none">
+        <CardContent className="flex gap-4 p-0">
+          <div className="w-full sm:w-[30%] md:w-2/5 overflow-hidden shrink-0">
             <img
               src={noticia.urlCapa}
               alt={noticia.titulo}
               width={728}
-              className="hover:scale-105 transition-all duration-300"
+              className="rounded-[10px] w-full object-contain hover:scale-105 transition-all duration-300"
             />
           </div>
           <div className="flex flex-col">
