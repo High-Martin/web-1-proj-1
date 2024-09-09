@@ -1,4 +1,4 @@
-import { Noticia, NoticiaPreview, NoticiaTrending } from "./types";
+import { Noticia, NoticiaPreview, NoticiaTrending, Resource } from "./types";
 
 const noticias: Noticia[] = [
   {
@@ -69,4 +69,19 @@ export function getNoticiasTrending(): NoticiaTrending[] {
     urlCapa: noticia.urlCapa,
     titulo: noticia.titulo,
   }));
+}
+
+export function getPopularResources(): Resource[] {
+  return [
+    {
+      titulo: `2024's Must-Have Guide to Continuous Pentesting and Breach Prevention`,
+      url: "https://thehackernews.uk/breachlock-appsec-2024",
+      urlCapa: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSsemQgdSQ5BRgV2-wOD8IhUEikfBvf9pnFZjMWXL8iwm8k4NShIi4gC8Ahc4QEs-su4bax-YJW-3cUQnZj6YEwcTv6QQxDliEb8XJWA24ZaFFh6fNV30JYQxeBIU6oXg9S7C9LOjDw2iM3Et6zVKOVxU5p7elyZmjpm7C9QxwXnp0zzaD3XWPveIk-bZW/s72-rw-e365/appsec.png",
+    },
+    {
+      urlCapa: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGrnPvz8ME-gEt4Oqh6f4QE2wKLf9G1tW7u4c4bwCy_oeWe4SuD6DgKs4YJLME3AlyWIqGYXfaegH6M1fEQYa_PEij7ztKAZSr1b0D6mhQXKU_ZVOOHh0HDhExU0QE_M-dq8DMDVQ0tDcxIjXWppVw-sW4ZVRjz9smV-S3-sW8WBrnxRIgwHlFmLZrcJQM/s72-rw-e365/bot.png",
+      titulo: `Top 9 Chatbots Ranked: Which One Leaves Your Business Most Vulnerable?`,
+      url: "https://www.reflectiz.com/learning-hub/chatbots-risk-exposure/",
+    }
+  ]
 }
