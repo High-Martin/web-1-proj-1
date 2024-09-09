@@ -17,7 +17,7 @@ export function Cabecalho({}) {
             alt="Hacker News logo"
           />
         </div>
-        <Link to="#email" className="hidden md:block">
+        <Link to="/subscribe" className="hidden md:block">
           <Button variant={"subscribe"} className="gap-2 my-[18.5px] ">
             <FontAwesomeIcon icon={faEnvelope} />
             Subscribe – Get Latest News

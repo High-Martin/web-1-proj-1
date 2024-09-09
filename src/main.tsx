@@ -6,6 +6,7 @@ import "./index.css";
 
 import { NoticiaDetailPage } from "./pages/hacker-news/[slug]/page.tsx";
 import { HackerNewsPage } from "./pages/hacker-news/page.tsx";
+import { SubscribePage } from "./pages/subscribe/page.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/noticia/:slug",
     element: <NoticiaDetailPage />,
+  },
+  {
+    path: "/subscribe",
+    element: <SubscribePage />,
   },
 ]);
 createRoot(document.getElementById("root")!).render(

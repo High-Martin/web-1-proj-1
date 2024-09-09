@@ -27,6 +27,39 @@ const noticias: Noticia[] = [
     ]
   },
   {
+    slug: "new-rust-based-ransomware-cicada3301.html",
+    urlCapa: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmlnYevRFVZTttlnIbwaWXTcdmgfBYgtCAnifl_0Q_6ZkPshiv-vb9A1hiuOxe6J6shaUWPzF3yq0fQUu-CmVnVtcVLP8mWlpqq_a6q558J5kRDI8ejO19ssAcyOd9c8DX5Avdi7YOCDuSI82D-9QwPqXq7mfRionmodiAAeEvDCdtbyDkJo0_ar-qJgfq/s728-rw-e365/linux.png",
+    titulo: "New Rust-Based Ransomware Cicada3301 Targets Windows and Linux Systems",
+    dataPublicacao: new Date(),
+    tags: ["Endpoint Security", "Malware"],
+    resumo: `  Cybersecurity researchers have unpacked the inner workings of a new ransomware variant called Cicada3301 that shares similarities with the now-defunct BlackCat (aka ALPHV) operation. "It appears that Cicada3301 ransomware primarily targets small to medium-sized businesses (SMBs), likely through opportunistic attacks that exploit vulnerabilities as the initial access vector," cybersecurity company Morphisec said in a technical report shared with The Hacker News. Written in Rust and capable of targeting both Windows and Linux/ESXi hosts, Cicada3301 first emerged in June 2024, inviting potential affiliates to join their ransomware-as-a-service (RaaS) platform via an advertisement on the RAMP underground forum. A notable aspect of the ransomware is that the executable embeds the compromised user's credentials, which are then used to run PsExec , a legitimate tool that makes it possible to run programs remotely. Cicada3301's similarities with BlackCat also extend`,
+    autor: "Ravie Lakshmanan",
+    paragrafos: [
+      `Cybersecurity researchers have unpacked the inner workings of a new ransomware variant called Cicada3301 that shares similarities with the now-defunct <a href="https://thehackernews.com/2024/03/exit-scam-blackcat-ransomware-group.html" rel="noopener" target="_blank">BlackCat</a> (aka ALPHV) operation.`,
+      `"It appears that Cicada3301 ransomware primarily targets small to medium-sized businesses (SMBs), likely through opportunistic attacks that exploit vulnerabilities as the initial access vector," cybersecurity company Morphisec <a href="https://blog.morphisec.com/cicada3301-ransomware-threat-analysis" rel="noopener" target="_blank">said</a> in a technical report shared with The Hacker News.`,
+      "Written in Rust and capable of targeting both Windows and Linux/ESXi hosts, Cicada3301 first emerged in June 2024, inviting potential affiliates to join their ransomware-as-a-service (RaaS) platform via an advertisement on the RAMP underground forum.",
+      `A notable aspect of the ransomware is that the executable embeds the compromised user's credentials, which are then used to run <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/psexec" rel="noopener" target="_blank">PsExec</a>, a legitimate tool that makes it possible to run programs remotely.`,
+    ]
+  },
+  {
+    slug: "the-new-effective-way-to-prevent.html",
+    urlCapa: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-bwy_bxlas21ikB5NY1I9sYZ-qPkhdUsq_wf9rj7xdK8rVHhHSIim5PB9ltxjKsoYKUEaX2xvhA1xjt1Rggbg6dVtHGfsoAK7GB6p8zVZjUaVjNyAhyphenhyphen21-vkVY8dnQjFp9AJn76YLRHgvZ9TLV3V-3eec57oA0edJXq8FnabVE7hVqEe6uPq8TwJlXr8/s728-rw-e365/layerx.png",
+    titulo: "The New Effective Way to Prevent Account Takeovers",
+    dataPublicacao: new Date(),
+    tags: ["SaaS Security", " Browser Security"],
+    resumo: ` Account takeover attacks have emerged as one of the most persistent and damaging threats to cloud-based SaaS environments. Yet despite significant investments in traditional security measures, many organizations continue to struggle with preventing these attacks. A new report, "Why Account Takeover Attacks Still Succeed, and Why the Browser is Your Secret Weapon in Stopping Them" argues that the browser is the primary battleground where account takeover attacks unfold and, thus, where they should be neutralized. The report also provides effective guidance for mitigating the account takeover risk.`,
+    autor: "The Hacker News",
+    paragrafos: [
+        `Account takeover attacks have emerged as one of the most persistent and damaging threats to cloud-based SaaS environments. Yet despite significant investments in traditional security measures, many organizations continue to struggle with preventing these attacks. A new report, "<a href="https://go.layerxsecurity.com/why-account-takeover-attacks-still-succeed-and-why-the-browser-is-your-secret-weapon-in-stopping-them?utm_source=thn" rel="noopener" target="_blank">Why Account Takeover Attacks Still Succeed, and Why the Browser is Your Secret Weapon in Stopping Them</a>" argues that the browser is the primary battleground where account takeover attacks unfold and, thus, where they should be neutralized. The report also provides effective guidance for mitigating the account takeover risk.`,
+        "Below are some of the key points raised in the report:",
+        `According to the report, the SaaS kill chain takes advantage of the fundamental components that are contained within the browser. For account takeover, these include:,
+        <li><strong>Executed Web Pages</strong> - Attackers can create phishing login pages or use MiTM over legitimate web pages to harvest and access credentials.</li>
+        <li><strong>Browser Extensions</strong> - Malicious extensions can access and exfiltrate sensitive data.</li>
+        <li><strong>Stored Credentials</strong> - Attackers aim to hijack the browser or exfiltrate its stored credentials to access SaaS apps. </li>
+        </ul>`,
+    ]
+  },
+  {
     slug: "not-1",
     urlCapa:
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKmMX999zXB84oRNczWEK4W8VodaujsXWikVA1avU_osbjwleTfC79P6nFmxp3rUPGQk3ZKNCc93KRO_m8cO5yTfCeksQxNdWJl5__OqjppwavG_7bYX0ZgAihKpCd3nJ5SApPf490exk3_j6suXuci9htjITCz2GYWVtZz6GZgsBwIOWMYERIQ_zvB9W7/s728-rw-e365/chinese-hacker.png",
