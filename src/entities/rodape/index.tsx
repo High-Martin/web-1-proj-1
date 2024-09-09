@@ -1,8 +1,14 @@
+import face from "@/assets/facelogo.png";
+import instaGram from "@/assets/instalogo.png";
+import linkedIn from "@/assets/linkdlogo.png";
+import telegram from "@/assets/telegramlogo.png";
+import xlogo from "@/assets/xlogo.png";
+import youTube from "@/assets/youtubelogo.png";
 import "./styles.css";
 
 export function Rodape() {
   return (
-    <footer className="rodape">
+    <footer className="rodape mt-[50px]">
       <div className="clear-box">
         <div className="footer-box-h4">
           <b>Connect with us!</b>
@@ -10,42 +16,33 @@ export function Rodape() {
 
         <div className="social-box">
           <div className="x-social">
-            {" "}
             <a href="https://twitter.com/thehackersnews" target="_blank">
-              <img src="src/assets/xlogo.png" width="50" height="50"></img>
+              <img src={xlogo} width="50" height="50"></img>
             </a>
           </div>
           <div className="linkd-social">
             <a href="https://twitter.com/thehackersnews" target="_blank">
-              <img src="src/assets/linkdlogo.png" width="50" height="50"></img>
+              <img src={linkedIn} width="50" height="50"></img>
             </a>
           </div>
           <div className="you-social">
             <a href="https://twitter.com/thehackersnews" target="_blank">
-              <img
-                src="src/assets/youtubelogo.png"
-                width="50"
-                height="50"
-              ></img>
+              <img src={youTube} width="50" height="50"></img>
             </a>
           </div>
           <div className="insta-social">
             <a href="https://twitter.com/thehackersnews" target="_blank">
-              <img src="src/assets/instalogo.png" width="50" height="50"></img>
+              <img src={instaGram} width="50" height="50"></img>
             </a>
           </div>
           <div className="face-social">
             <a href="https://twitter.com/thehackersnews" target="_blank">
-              <img src="src/assets/facelogo.png" width="50" height="50"></img>
+              <img src={face} width="50" height="50"></img>
             </a>
           </div>
           <div className="tele-social">
             <a href="https://twitter.com/thehackersnews" target="_blank">
-              <img
-                src="src/assets/telegramlogo.png"
-                width="50"
-                height="50"
-              ></img>
+              <img src={telegram} width="50" height="50"></img>
             </a>
           </div>
         </div>
@@ -62,7 +59,7 @@ export function Rodape() {
             <a href="1">Deals Store</a>
             <a href="1">Privacy Policy</a>
           </div>
-          <div className="menu-deals">
+          <div className="hidden sm:flex flex-col">
             <b>Deals</b>
             <a href="1">Hacking</a>
             <a href="1">Development</a>

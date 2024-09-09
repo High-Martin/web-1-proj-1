@@ -1,0 +1,18 @@
+.noticia-paragrafo>a{
+    color: #195afe;
+    text-decoration: none;
+    font-weight: 500;
+    outline: 0;
+}
+.noticia-paragrafo>a:hover{
+    text-decoration: underline;
+}
+
+.video-container{
+    margin: 28px 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}

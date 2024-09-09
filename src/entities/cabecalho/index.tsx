@@ -9,7 +9,7 @@ export function Cabecalho({}) {
   return (
     <header className="bg-header-gradient w-100">
       <div className="flex justify-between items-center mx-auto max-w-[1110px] px-5">
-        <div className="w-1/2">
+        <div className="flex items-center w-1/2 leading-[60px] h-[60px] md:leading-[72px] md:h-[72px]">
           <ClickImage
             href="/"
             src={hackerNews}
@@ -17,7 +17,7 @@ export function Cabecalho({}) {
             alt="Hacker News logo"
           />
         </div>
-        <Link to="#email">
+        <Link to="#email" className="hidden md:block">
           <Button variant={"subscribe"} className="gap-2 my-[18.5px] ">
             <FontAwesomeIcon icon={faEnvelope} />
             Subscribe – Get Latest News

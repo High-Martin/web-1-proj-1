@@ -43,7 +43,7 @@
   .insta-social img:hover,
   .face-social img:hover,
   .tele-social img:hover {
-    transform: scale(1.2); /* Aumenta a imagem em 20% */
+    transform: scale(1.1); /* Aumenta a imagem em 20% */
   }
 .menu-box{
     margin: 35px 0 0;
@@ -53,7 +53,7 @@
     justify-content: space-between;
     text-align: start;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 .menu-company,.menu-pages,.menu-deals{
     display: flex;
@@ -75,14 +75,14 @@
 
 }
 .menu-box a {
-
+    font-size: 14px;
     text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: rgb(84, 83, 83); /* Mantém a cor do texto do link igual ao texto ao redor */
     display: inline-block; /* Garante que o padding e a borda sejam aplicados corretamente */
     padding: 5px; /* Espaço interno ao redor dos links, opcional */
   }
 .menu-box a:hover {
-    border-bottom: 1px solid rgb(84, 83, 83); /* Linha embaixo do link (2px de espessura e cor preta) */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
   }
 .menu-more a:hover{
     border-bottom: 0px;

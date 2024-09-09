@@ -13,13 +13,15 @@ export function TopArea() {
       <Cabecalho />
       <NavBar className="flex">
         <div className="flex items-center mr-auto">
-          <NavBarLink href="#home">Home</NavBarLink>
-          <NavBarLink href="#cyber-attacks">Cyber Attacks</NavBarLink>
+          <NavBarLink href="/">Home</NavBarLink>
+          <NavBarLink className="hidden md:block" href="#cyber-attacks">
+            Cyber Attacks
+          </NavBarLink>
           <NavBarLink href="#vulnerabilities">Vulnerabilities</NavBarLink>
           <NavBarLink href="#store">Store</NavBarLink>
           <NavBarLink href="#contact">Contact</NavBarLink>
         </div>
-        <div className="flex items-center">
+        <div className="hidden md:flex items-center">
           <button
             className="px-6"
             onClick={() => setIsSearchOpen((val) => !val)}

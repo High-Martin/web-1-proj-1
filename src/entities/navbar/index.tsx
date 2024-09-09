@@ -21,12 +21,19 @@ export function NavBar({ children, className }: NavBarProps) {
 export function NavBarLink({
   href,
   children,
+  className,
 }: {
   href: string;
   children: React.ReactNode;
+  className?: string;
 }) {
   return (
-    <li className="leading-[46px] h-[46px] border-b-4 border-b-transparent hover:border-b-primary float-left px-[20px]">
+    <li
+      className={cn(
+        "leading-[46px] h-[46px] border-b-4 border-b-transparent hover:border-b-primary float-left px-[20px]",
+        className
+      )}
+    >
       <Link
         to={href}
         className="text-muted font-semibold hover:text-muted tracking-[.3px] text-[15px]"

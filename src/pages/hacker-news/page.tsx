@@ -7,12 +7,11 @@ import { TopArea } from "@/widgets/top-area/ui";
 export function HackerNewsPage() {
   return (
     <div className="flex flex-col">
-      <div className="h-screen w-full">
+      <div className="min-h-screen w-full">
         <TopArea />
         <div className="flex flex-row mt-10 mx-auto max-w-[766px] md:max-w-[1110px] px-[20px]">
           <ListaNoticias />
-
-          <div className="flex flex-col gap-[10px]">
+          <div className="hidden lg:flex flex-col gap-[10px]">
             <ListaNoticiasTrending />
             <ListaPopularResources />
           </div>
